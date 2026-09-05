@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "SDF-VLT-Gravity-Dynamics: Structural Delimitation Framework"
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: Gachkar
+    given-names: Adel
+    affiliation: "Islamic Azad University, Urmia"
+    orcid: "https://orcid.org/0009-0006-7713-6004"
+version: 3.4.2
+date-released: "2026-09-06"
+license: MIT
+doi: 10.5281/zenodo.22412461
+url: "https://github.com/adelgachkar/SDF-VLT-Gravity-Dynamics"

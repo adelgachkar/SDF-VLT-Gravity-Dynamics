@@ -1,6 +1,6 @@
 # SDF-VLT-Gravity-Dynamics
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22267160.svg)](https://doi.org/10.5281/zenodo.22267160)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22412461.svg)](https://doi.org/10.5281/zenodo.22412461)
 
 ## Overview
 
@@ -34,7 +34,7 @@ effective metrics, and gravitational dynamics emerge structurally.
 
 If you use this work, please cite the Zenodo record:
 
-> Adel Gachkar, *Structural Delimitation Framework (SDF) — Void/Lattice Gravity Dynamics*, v3.4.2, Zenodo, 2026. DOI: [10.5281/zenodo.22267160](https://doi.org/10.5281/zenodo.22267160)
+> Adel Gachkar, *Structural Delimitation Framework (SDF) — Void/Lattice Gravity Dynamics*, v3.4.2, Zenodo, 2026. DOI: [10.5281/zenodo.22412461](https://doi.org/10.5281/zenodo.22412461)
 
 ## License
 
