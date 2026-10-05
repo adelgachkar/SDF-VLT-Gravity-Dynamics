@@ -49,7 +49,7 @@ effective metrics, and gravitational dynamics emerge structurally.
 
 If you use this work, please cite the Zenodo record:
 
-> Adel Gachkar, *Structural Delimitation Framework (SDF) — Void/Lattice Gravity Dynamics*, v3.4.2, Zenodo, 2026. DOI: [10.5281/zenodo.22412461](https://doi.org/10.5281/zenodo.22412461)
+> Adel Gachkar, *Structural Delimitation Framework (SDF) — Void/Lattice Gravity Dynamics*, v3.4.3, Zenodo, 2026. Concept DOI: [10.5281/zenodo.22412460](https://doi.org/10.5281/zenodo.22412460) (always resolves to the latest version; v3.4.2 deposit DOI: 10.5281/zenodo.22412461).
 
 ## License
 
