@@ -1,7 +1,8 @@
 ---
+created: 2026-09-05
 id: 06_L_Effective_Laws
 title: Canonical Engine Layer 06 - Effective Laws (L)
-status: Canonical Frozen
+status: canonical
 framework: SDF-VLT-Gravity-Dynamics
 parent: "[[01_Canonical_Chain_Engine/05_M_Manifold_Foliations]]"
 dependencies:
@@ -11,6 +12,9 @@ tags:
   - canonical-engine
   - effective-laws
   - einstein-emergence
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
 ---
 
 # Canonical Engine Layer 06: Effective Laws (L)

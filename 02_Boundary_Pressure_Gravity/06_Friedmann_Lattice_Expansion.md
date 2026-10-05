@@ -1,7 +1,11 @@
 ---
 id: SDF-BPG-02-06-FRIEDMANN-LATTICE-EXPANSION
 title: Friedmann Lattice Expansion via Void Boundary Pressure
-status: Mathematically Closed Derivation
+created: 2026-09-05
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
+status: canonical
 framework: SDF-VLT-Gravity-Dynamics
 parent: "[[01_Canonical_Chain_Engine/06_L_Effective_Laws]]"
 dependencies:
@@ -16,69 +20,69 @@ tags:
   - boundary-pressure
 ---
 
-# Friedmann Lattice Expansion via Void Boundary Pressure (انبساط شبکه فریدمن از طریق فشار مرزی کاواک‌ها)
+# Friedmann Lattice Expansion via Void Boundary Pressure
 
-## ۱. دینامیک سلول واحد و نگاشت به ضریب مقیاس کیهانی (Unit Cell & Cosmic Scale Factor)
-در چارچوب تحدید ساختاری (SDF-VLT)، انبساط کیهانی ناشی از کشیدگی ذاتی پیوستار فضازمان نبوده، بلکه حاصل برآیند هیدرودینامیکی و کشش سطحی سلول‌های شبکه خلأ کیهانی تحت تعادل فشاری است. 
+## 1. Unit-Cell Dynamics and Mapping to the Cosmic Scale Factor
+In the SDF-VLT framework, cosmic expansion is not the intrinsic stretching of a spacetime continuum: it is the hydrodynamic aggregate of the cells of the cosmic void lattice under surface tension in pressure equilibrium.
 
-یک سلول واحد شبکه با سطح مقطع مؤثر $A_{\text{cell}}$ و بعد مشخصه خطی $L(t)$ را در نظر می‌گیریم:
+Consider a unit lattice cell with effective cross-section $A_{\text{cell}}$ and characteristic linear dimension $L(t)$:
 
 $$V_{\text{cell}}(t) = A_{\text{cell}} \cdot L(t)$$
 
-در مقیاس‌های همگن‌سازی‌شده موضعی، ضریب مقیاس کیهانی $a(t)$ با بعد خطی سلول متناسب بوده و پارامتر هابل $H(t)$ به صورت نرخ اتساع سلولی تعریف می‌شود:
+At locally homogenized scales, the cosmic scale factor $a(t)$ is proportional to the cell's linear dimension, and the Hubble parameter $H(t)$ is defined as the rate of cellular expansion:
 
 $$a(t) \propto L(t) \implies H(t) \equiv \frac{\dot{a}}{a} = \frac{\dot{L}}{L}$$
 
 ---
 
-## ۲. معادلات فریدمن اصلاح‌شده SDF (Modified Friedmann System)
-با اعمال شرایط مرزی پیوستگی تنش در پوسته کاواک‌ها و پایستگی انرژی-تکانه روی ابرسطوح مرزی، معادله اول فریدمن برای پس‌زمینه تخت ($k=0$) به صورت زیر استخراج می‌گردد:
+## 2. The SDF Modified Friedmann System
+Applying boundary stress-continuity conditions on the cavity shells and energy–momentum conservation across the boundary hypersurfaces, the first Friedmann equation for the flat ($k=0$) background is derived as:
 
 $$H^2 = \frac{8\pi G}{3}\rho_m + \frac{\Lambda_{\text{eff}}}{3} + \frac{\mathcal{Q}_{\text{net}}}{3 L(t)}$$
 
-### تبیین مؤلفه‌ها و سازگاری دیمانسیونی:
-1. **ثابت کیهان‌شناسی مؤثر هندسی ($\Lambda_{\text{eff}}$):**
-   چگالی انرژی تاریک برآمده از تنش مرزی دیواره‌های پوچ ($\sigma_{\text{wall}}$) به ازای شعاع مشخصه کاواک $R_v$:
+### Component explication and dimensional consistency:
+1. **The geometric effective cosmological constant ($\Lambda_{\text{eff}}$):**
+   The dark-energy density emerging from the wall boundary stress ($\sigma_{\text{wall}}$) per characteristic cavity radius $R_v$:
    $$\Lambda_{\text{eff}} \equiv \frac{8\pi G \sigma_{\text{wall}}}{R_v} \quad \left( [\Lambda_{\text{eff}}] = \frac{[\text{m}^3 \text{kg}^{-1} \text{s}^{-2}][\text{kg} \cdot \text{m}^{-2}]}{[\text{m}]} = \text{s}^{-2} \right)$$
-   این عبارت جایگزین چگالی انرژی تاریک کواکسیال در نسبیت عام شده و مقدار عددی مشاهده‌شده $\Lambda \approx 10^{-35} \, \text{s}^{-2}$ را بدون نیاز به پارامترهای تنظیمی پلانکی بازتولید می‌کند.
+   This term replaces the coexisting dark-energy density of general relativity and reproduces the observed numerical value $\Lambda \approx 10^{-35} \, \text{s}^{-2}$ without any Planck-scale tuning parameters.
 
-2. **ترم شار شتاب مرزی ($\mathcal{Q}_{\text{net}}$):**
-   شار خالص تبادل تکانه و انباشت فشار در مرزهای میان‌سلولی با بعد شتاب ($[\text{m}\cdot\text{s}^{-2}]$):
+2. **The boundary acceleration-flux term ($\mathcal{Q}_{\text{net}}$):**
+   The net flux of momentum exchange and pressure accumulation at inter-cell boundaries, with acceleration dimension ($[\text{m}\cdot\text{s}^{-2}]$):
    $$\mathcal{Q}_{\text{net}} = \frac{1}{\rho_{\text{lattice}}} \nabla \cdot \mathbf{\Pi}_{\text{boundary}}$$
-   که سبب می‌شود $\frac{\mathcal{Q}_{\text{net}}}{L(t)}$ دارای بعد سازگار با $H^2$ ($[\text{s}^{-2}]$) باشد.
+   which renders $\frac{\mathcal{Q}_{\text{net}}}{L(t)}$ dimensionally consistent with $H^2$ ($[\text{s}^{-2}]$).
 
 ---
 
-## ۳. معادله شتاب کیهانی و پدیداری انبساط تندشونده (Acceleration Equation)
-با مشتق‌گیری زمانی از معادله اول فریدمن و اعمال معادله تداوم باریونی ($\dot{\rho}_m + 3H(\rho_m + p_m/c^2) = 0$)، معادله دوم فریدمن (معادله رایچادوری مؤثر) به فرم بسته زیر حاصل می‌شود:
+## 3. The Cosmic Acceleration Equation and the Onset of Accelerated Expansion
+Differentiating the first Friedmann equation in time and applying the baryon-continuity equation ($\dot{\rho}_m + 3H(\rho_m + p_m/c^2) = 0$), the second Friedmann equation (the effective Raychaudhuri equation) is obtained in the following closed form:
 
 $$\frac{\ddot{a}}{a} = -\frac{4\pi G}{3}\left(\rho_m + \frac{3p_m}{c^2}\right) + \frac{\Lambda_{\text{eff}}}{3} + \mathcal{R}_{\text{boundary}}$$
 
-که در آن اثر بازخورد تنش دیواره‌های مجاور ($\mathcal{R}_{\text{boundary}}$) برابر است با:
+where the feedback effect of adjacent wall stresses ($\mathcal{R}_{\text{boundary}}$) is:
 
 $$\mathcal{R}_{\text{boundary}} = \frac{1}{6 L(t)} \left( \dot{\mathcal{Q}}_{\text{net}} - H \mathcal{Q}_{\text{net}} \right) - \frac{8\pi G}{3 c^2} P_{\text{wall}}^{\text{eff}}$$
 
-### گذار به فاز انبساط شتاب‌دار:
-در دوران اولیه کیهان ($\rho_m \gg \frac{\sigma_{\text{wall}}}{R_v}$)، جاذبه باریونی حاکم بوده و $\ddot{a} < 0$ است. با انبساط کاواک‌ها و رقیق شدن ماده درون‌سلولی، چگالی تنش مرزی دیواره‌ها غالب شده و با برقراری شرط:
+### Transition to the accelerated-expansion phase:
+In the early universe ($\rho_m \gg \frac{\sigma_{\text{wall}}}{R_v}$), baryonic gravity dominates and $\ddot{a} < 0$. As the cavities expand and the intra-cellular matter dilutes, the boundary stress density of the walls dominates, and once the condition
 
 $$\Lambda_{\text{eff}} > 4\pi G \left(\rho_m + \frac{3p_m}{c^2}\right) - 3\mathcal{R}_{\text{boundary}}$$
 
-کیهان به صورت کاملاً هندسی و خودبه‌خودی وارد فاز انبساط شتاب‌دار ($\ddot{a} > 0$) می‌گردد، بدون آنکه نیازی به فرض میدان‌های اسکالر فرضی (Quintessence) یا انرژی تاریک نامتناهی باشد.
+is met, the universe enters the phase of accelerated expansion ($\ddot{a} > 0)$ in a fully geometric and spontaneous manner — with no need for hypothetical scalar fields (Quintessence) or an infinite dark energy.
 
 ---
 
-## ۴. ارتباط با تنش هابل موضعی (Resolution of Local Hubble Variance)
-از آنجا که نرخ انبساط موضعی وابسته به مقیاس سلول‌های کاواک $R_v$ و تنش موضعی $\sigma_{\text{wall}}$ است، در مقیاس‌های ناهمگن محلی (محیط با غلبه کاواک‌های محلی)، نرخ اتساع مؤثر $H_{\text{local}}$ مقداری اندکی بزرگ‌تر از نرخ میانگین کیهانی دوردست $H_{\text{global}}$ ثبت می‌کند:
+## 4. Relation to the Local Hubble Variance (Resolution of Local Hubble Variance)
+Since the local expansion rate depends on the cavity-cell scale $R_v$ and the local stress $\sigma_{\text{wall}}$, in locally inhomogeneous environments (regions dominated by local voids) the effective expansion rate $H_{\text{local}}$ registers slightly above the distant cosmic mean $H_{\text{global}}$:
 
 $$H_{\text{local}} = H_{\text{global}} \left( 1 + \frac{\delta \sigma_{\text{wall}}}{2 \sigma_0} \right)$$
 
-این تصحیح ساختاری، اختلاف حدود $8\%$ میان اندازه‌گیری‌های موضعی (Supernovae Ia / Cepheids) و داده‌های تابش پس‌زمینه کیهانی (Planck CMB) را بدون شکست مدل تبیین می‌کند.
+This structural correction explains the ~$8\%$ discrepancy between local measurements (Supernovae Ia / Cepheids) and the cosmic background radiation data (Planck CMB) without any model break.
 
 ---
 
-## ۵. پیوندهای شبکه (Network Links)
-- قانون مؤثر در زنجیره کانونی: [[01_Canonical_Chain_Engine/06_L_Effective_Laws]]
-- تنش تانسوری شبکه: [[02_Boundary_Pressure_Gravity/02_Lattice_Stress_Tensor]]
-- دینامیک تورم لایه میانی: [[02_Boundary_Pressure_Gravity/05_Middle_Atmosphere_Inflation_Dynamics]]
-- حل تنش هابل: [[04_Observational_Validation/02_Hubble_Tension_Resolution]]
-- پیش‌بینی‌های تجربی ابطال‌پذیر: [[04_Observational_Validation/04_Empirical_Predictions]]
+## 5. Network Links
+- Effective law in the canonical chain: [[01_Canonical_Chain_Engine/06_L_Effective_Laws]]
+- Lattice stress tensor: [[02_Boundary_Pressure_Gravity/02_Lattice_Stress_Tensor]]
+- Middle-layer inflation dynamics: [[02_Boundary_Pressure_Gravity/05_Middle_Atmosphere_Inflation_Dynamics]]
+- Hubble tension resolution: [[04_Observational_Validation/02_Hubble_Tension_Resolution]]
+- Falsifiable empirical predictions: [[04_Observational_Validation/04_Empirical_Predictions]]

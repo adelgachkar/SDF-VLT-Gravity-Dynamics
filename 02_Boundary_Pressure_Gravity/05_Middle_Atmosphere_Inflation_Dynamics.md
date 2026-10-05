@@ -1,12 +1,16 @@
 ---
+created: 2026-09-05
 title: 05 Middle Atmosphere Inflation Dynamics
 vault_type: SDF-VLT-Gravity-Dynamics
 canonical_phase: Atmosphere & Boundary Dynamics
-status: Formal Foundation
+status: canonical
 id: SDF-VLT--02_Boundary_Pressure_Gravity-05_Middle_Atmosphere_Inflation_Dynamics
 parent: []
 dependencies: []
 tags: []
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
 ---
 
 # Middle Atmosphere Inflation Dynamics

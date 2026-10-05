@@ -1,0 +1,33 @@
+{
+  "title": "SDF-VLT-Gravity-Dynamics: Structural Delimitation Framework — Void/Lattice Gravity Dynamics",
+  "version": "3.4.3",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "access_right": "open",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Gachkar, Adel",
+      "orcid": "0009-0006-7713-6004"
+    }
+  ],
+  "keywords": [
+    "structural delimitation framework",
+    "void lattice",
+    "boundary pressure",
+    "emergent gravity",
+    "modified Friedmann",
+    "Hubble tension",
+    "MOND emergence",
+    "Israel junction conditions",
+    "Kerr-Schild"
+  ],
+  "description": "SDF-VLT-Gravity-Dynamics is the canonical documentation vault of the Structural Delineation Framework (SDF) for Void/Lattice Gravity Dynamics: a Non-Constraint Foundation from which boundary pressure, effective metrics, and gravitational dynamics emerge structurally. The canonical chain G to Cid to S to R to M to L to F grounds lattice stress, the modified Friedmann system, geodesic deviation, and observational validations (rotation curves / BTFR, Hubble tension, void lensing). All results are model-level derivations with explicit falsification criteria; no empirical claim is made. Member of the seven-repository SDF family; canonical Aligned Protocol home: LIMEN-VACUI.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/adelgachkar/SDF-VLT-Gravity-Dynamics",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

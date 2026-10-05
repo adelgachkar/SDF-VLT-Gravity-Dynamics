@@ -1,7 +1,11 @@
 ---
 id: SDF-OBS-04-01-ROTATION-CURVES
 title: Galactic Rotation Curves from Boundary Tension
-status: Mathematically Closed Derivation
+created: 2026-09-05
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
+status: canonical
 framework: SDF-VLT-Gravity-Dynamics
 parent: "[[01_Canonical_Chain_Engine/07_F_Phenomenological_Prints]]"
 dependencies:
@@ -16,66 +20,66 @@ tags:
   - mond-emergence
 ---
 
-# Galactic Rotation Curves from Boundary Tension (منحنی دوران کهکشانی از تنش مرزی کاواک‌ها)
+# Galactic Rotation Curves from Boundary Tension
 
-## ۱. خاستگاه هندسی شتاب آستانه بحرانی (Critical Acceleration Scale $a_0$)
-در چارچوب تحدید ساختاری (SDF)، مسطح شدن منحنی دوران کهکشان‌ها ناشی از وجود هاله ماده تاریک ذره‌ای نیست؛ بلکه برآمده از اثر تجمعی تنش مرزی و گرادیان فشار شبکه کاواک‌های پیرامونی است. شتاب مشخصه بحرانی $a_0$ مستقیماً از چگالی تنش سطحی دیواره‌های شبکه ($\sigma_{\text{wall}}$) و نرخ انبساط پس‌زمینه استخراج می‌شود:
+## 1. Geometric Origin of the Critical Acceleration Scale $a_0$
+In the SDF framework, the flattening of galactic rotation curves does not stem from a halo of particle dark matter: it emerges from the cumulative effect of boundary stress and the pressure gradient of the lattice of surrounding cavities. The critical characteristic acceleration $a_0$ is extracted directly from the surface-stress density of the lattice walls ($\sigma_{\text{wall}}$) and the background expansion rate:
 
 $$a_0 \equiv 2\pi G \sigma_{\text{wall}} = \frac{c H_0}{2\pi} \approx 1.2 \times 10^{-10} \, \text{m/s}^2$$
 
-این مقدار دقیقاً مقیاس شتابی است که در آن سهم نشت فاز هندسی بر پتانسیل کلاسیل گرانش نیوتنی غلبه می‌کند.
+This is precisely the acceleration scale at which the geometric phase-leak contribution overtakes the Newtonian classical gravitational potential.
 
 ---
 
-## ۲. تابع گذار فازی و شتاب کل مؤثر (Effective Acceleration Function)
-شتاب کل وارد بر یک ستاره آزمون در فاصله مداری $r$ از مرکز کهکشان، توسط معادله دیفرانسیل جفت‌شدگی مرزی تعیین می‌گردد. معادله شتاب مدار دایروی با در نظر گرفتن تابع پاسخ غیرخطی شبکه به فرم زیر است:
+## 2. The Phase-Transition Function and the Total Effective Acceleration
+The total acceleration acting on a test star at orbital radius $r$ from the galactic center is determined by the boundary-coupling differential equation. The circular-orbit acceleration equation, including the nonlinear response function of the lattice, takes the form:
 
 $$a(r) \cdot \mu\left(\frac{a(r)}{a_0}\right) = g_{\text{Newton}}(r)$$
 
-که در آن:
-- $g_{\text{Newton}}(r) = \frac{G M(r)}{r^2}$ شتاب گرانشی ناشی از جرم باریونی توزیع‌شده است.
-- $\mu(x)$ تابع درون‌یابی فازی پیوسته تحدید است که برای رفتار مجانبی شبکه به صورت زیر تعریف می‌شود:
+where:
+- $g_{\text{Newton}}(r) = \frac{G M(r)}{r^2}$ is the gravitational acceleration from the distributed baryonic mass.
+- $\mu(x)$ is the continuous delimitation phase-interpolation function, defined for the lattice's asymptotic behavior as:
 
-$$\mu(x) = \frac{x}{1 + x} \quad \text{یا} \quad \mu(x) = \frac{x}{\sqrt{1 + x^2}}$$
+$$\mu(x) = \frac{x}{1 + x} \quad \text{or} \quad \mu(x) = \frac{x}{\sqrt{1 + x^2}}$$
 
-### تحلیل رژیم‌های حدی:
-1. **رژیم میدان قوی ($a \gg a_0$، نواحی مرکزی کهکشان):**
+### Analysis of the limiting regimes:
+1. **Strong-field regime ($a \gg a_0$, galactic central regions):**
    $$\mu\left(\frac{a}{a_0}\right) \to 1 \implies a(r) \approx g_{\text{Newton}}(r) = \frac{G M(r)}{r^2}$$
-   گرانش کلاسیک نیوتنی کاملاً برقرار بوده و نیازی به هیچ‌گونه تصحیحی نیست.
+   Classical Newtonian gravity holds fully, with no correction required.
 
-2. **رژیم میدان ضعیف ($a \ll a_0$، لبه کهکشان‌ها و فواصل دور $r \gg r_0$):**
+2. **Weak-field regime ($a \ll a_0$, galaxy edges and large distances $r \gg r_0$):**
    $$\mu\left(\frac{a}{a_0}\right) \to \frac{a}{a_0} \implies a \left(\frac{a}{a_0}\right) = g_{\text{Newton}} \implies a(r) = \sqrt{a_0 \, g_{\text{Newton}}(r)} = \frac{\sqrt{G M_b a_0}}{r}$$
 
 ---
 
-## ۳. اشتقاق سرعت مسطح مداری و قانون تولی-فیشر باریونی (BTFR Derivation)
-با برابری شتاب مرکزگرا با شتاب مؤثر رژیم میدان ضعیف در لبه کهکشان:
+## 3. Derivation of the Flat Orbital Velocity and the Baryonic Tully–Fisher Relation (BTFR)
+Equating the centripetal acceleration with the effective weak-field acceleration at the galactic edge:
 
 $$\frac{v^2(r)}{r} = a(r) = \frac{\sqrt{G M_b a_0}}{r}$$
 
-با ساده‌سازی $r$ از دو طرف معادله، وابستگی سرعت مماسی به شعاع به طور کامل حذف شده و سرعت مداری به مقدار ثابت مسطح میل می‌کند:
+Simplifying by $r$ on both sides, the dependence of the tangential velocity on the radius cancels completely and the orbital velocity tends to a constant flat value:
 
 $$v_{\text{flat}}^2 = \sqrt{G M_b a_0} \implies v_{\text{flat}} = \left( G M_b a_0 \right)^{1/4}$$
 
-با توان‌رسانی به توان ۴:
+Raising both sides to the fourth power:
 
 $$v_{\text{flat}}^4 = G a_0 M_b \implies M_b = \frac{1}{G a_0} v_{\text{flat}}^4$$
 
-این نتیجه دقیقاً منطبق بر **قانون تولی-فیشر باریونی (BTFR)** با شیب دقیق $4.0$ است، بدون آنکه پارامتر آزاد، پروفایل هاله ماده تاریک، یا تنظیم دستی پارامترها (Fine-tuning) به مدل تحمیل گردد.
+This result matches the **Baryonic Tully–Fisher Relation (BTFR)** with the exact slope $4.0$, with no free parameter, no dark-matter halo profile, and no fine-tuning imposed on the model.
 
 ---
 
-## ۴. مقایسه با پروفایل کهکشان‌های غول‌پیکر و کوتوله (SPARC Database Concordance)
-- **کهکشان‌های کم‌درخشندگی و پر از گاز (LSB Galaxies):** از آنجا که شتاب باریونی این کهکشان‌ها در تمامی شعاع‌ها در رژیم $a < a_0$ قرار دارد، منحنی دوران آن‌ها از همان فواصل نزدیک آغاز به مسطح شدن می‌کند.
-- **کهکشان‌های با درخشندگی سطحی بالا (HSB Galaxies):** بخش مرکزی کهکشان توسط دینامیک نیوتنی توصیف شده و گذار به $v_{\text{flat}}$ دقیقاً در شعاع مشخصه $r_0 = \sqrt{\frac{G M_b}{a_0}}$ اتفاق می‌افتد.
+## 4. Comparison Across Giant and Dwarf Galaxy Profiles (SPARC Database Concordance)
+- **Low-surface-brightness, gas-rich galaxies (LSB):** since the baryonic acceleration of these galaxies lies in the regime $a < a_0$ at all radii, their rotation curves begin flattening from very small radii.
+- **High-surface-brightness galaxies (HSB):** the central region is governed by Newtonian dynamics, and the transition to $v_{\text{flat}}$ occurs exactly at the characteristic radius $r_0 = \sqrt{\frac{G M_b}{a_0}}$.
 
-این تطابق کامل، مؤید این اصل است که پدیده‌های دینامیکی نسبت‌داده‌شده به ماده تاریک، آثار هیدرودینامیکی و کشش سطحی پوسته مرزی خلأهای کیهانی هستند.
+This full concordance confirms the principle that the dynamical phenomena attributed to dark matter are the hydrodynamic and surface-tension effects of the shells of cosmic voids.
 
 ---
 
-## ۵. پیوندهای شبکه (Network Links)
-- اثرات پدیدارشناختی زنجیره: [[01_Canonical_Chain_Engine/07_F_Phenomenological_Prints]]
-- تنش سطحی شبکه: [[02_Boundary_Pressure_Gravity/02_Lattice_Stress_Tensor]]
-- میدان شتاب برآمده: [[02_Boundary_Pressure_Gravity/03_Acceleration_Emergence_Field]]
-- عدسی گرانشی در خلأها: [[04_Observational_Validation/03_Lensing_In_Voids]]
-- پیش‌بینی‌های تجربی و ابطال‌پذیری: [[04_Observational_Validation/04_Empirical_Predictions]]
+## 5. Network Links
+- Chain phenomenological effects: [[01_Canonical_Chain_Engine/07_F_Phenomenological_Prints]]
+- Lattice surface stress: [[02_Boundary_Pressure_Gravity/02_Lattice_Stress_Tensor]]
+- Emergent acceleration field: [[02_Boundary_Pressure_Gravity/03_Acceleration_Emergence_Field]]
+- Gravitational lensing in voids: [[04_Observational_Validation/03_Lensing_In_Voids]]
+- Empirical predictions and falsifiability: [[04_Observational_Validation/04_Empirical_Predictions]]

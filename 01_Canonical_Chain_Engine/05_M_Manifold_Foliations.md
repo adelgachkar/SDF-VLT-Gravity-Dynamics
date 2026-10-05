@@ -1,6 +1,9 @@
 ---
 title: 05_M Manifold Foliations
 created: 2026-09-05
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
 framework: Structural Delineation Framework (SDF)
 phase: SDF-VLT-Gravity-Dynamics
 tags:
@@ -8,16 +11,16 @@ tags:
 - manifold-foliation
 - 2d-sheets
 id: SDF-VLT--01_Canonical_Chain_Engine-05_M_Manifold_Foliations
-status: Draft
+status: canonical
 parent: []
 dependencies: []
 ---
 
 # Manifold Foliations ($\mathcal{M}$)
 
-## ۱. ورقه‌ورقه‌شدگی چندگونا
-فضا-زمان پیوسته به عنوان برآیندی از ورقه‌های دوبعدی ($\text{2D Sheets}$) که در اثر پیشروی فازی روی هم انباشته می‌شوند پدیدار می‌گردد.
+## 1. Manifold Layering
+Continuous spacetime phenomenates as the aggregate of two-dimensional sheets ($\text{2D Sheets}$) stacked upon one another through phase progression.
 
-## پیوندهای شبکه
-- گام بعدی: [[01_Canonical_Chain_Engine/06_L_Effective_Laws]]
-- تکوین ابعاد: [[03_Geometric_Metric_Emergence/04_Sheet_2D_Foliation_Unfolding]]
+## Network Links
+- Next step: [[01_Canonical_Chain_Engine/06_L_Effective_Laws]]
+- Dimensional unfolding: [[03_Geometric_Metric_Emergence/04_Sheet_2D_Foliation_Unfolding]]

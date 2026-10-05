@@ -3,7 +3,7 @@ title: 02 Lattice Stress Tensor
 created: 2026-09-05
 framework: Structural Delineation Framework (SDF)
 phase: SDF-VLT-Gravity-Dynamics
-status: Formal Foundation
+status: canonical
 id: SDF-VLT--02_Boundary_Pressure_Gravity-02_Lattice_Stress_Tensor
 parent:
   - 02_Boundary_Pressure_Gravity/01_Boundary_Pressure_Foundations
@@ -15,6 +15,9 @@ tags:
   - boundary-pressure-gravity
   - lattice-stress-tensor
   - stress-manifold-projection
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
 ---
 
 

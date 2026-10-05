@@ -1,12 +1,16 @@
 ---
+created: 2026-09-05
 title: 01 Boundary Pressure Foundations
 vault_type: SDF-VLT-Gravity-Dynamics
 canonical_phase: Boundary Pressure & Emergent Dynamics
-status: Formal Foundation
+status: canonical
 id: SDF-VLT--02_Boundary_Pressure_Gravity-01_Boundary_Pressure_Foundations
 parent: []
 dependencies: []
 tags: []
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
 ---
 
 # Boundary Pressure Foundations

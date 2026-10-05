@@ -1,7 +1,9 @@
 ---
 id: SDF-GEO-03-01-METRIC-TENSOR
 title: Effective Metric Tensor and Geometric Bridging
-status: Mathematically Closed Derivation
+author: "Adel Gachkar (ORCID 0009-0006-7713-6004)"
+license: "CC-BY-4.0"
+status: canonical
 framework: SDF-VLT-Gravity-Dynamics
 parent: "[[01_Canonical_Chain_Engine/05_M_Manifold_Foliations]]"
 dependencies:
@@ -15,9 +17,9 @@ tags:
   - kerr-schild
 ---
 
-# Effective Metric Tensor Emergence & Geometric Bridging (برآمدن تانسور متریک مؤثر و پل‌بندی هندسی)
+# Effective Metric Tensor Emergence & Geometric Bridging
 
-## 1. Unified Boundary Field Equation (معادله میدان مرزی یکپارچه)
+## 1. Unified Boundary Field Equation
 In the Structural Delineation Framework (SDF), the spacetime metric is not an a priori background container, but an emergent geometric manifestation of void-boundary stress interactions and phase delimitation.
 
 The metric perturbation $h_{\mu\nu} = g_{\mu\nu}^{\text{eff}} - \eta_{\mu\nu}$ satisfies the generalized inhomogeneous wave equation in the harmonic gauge ($\partial^\mu \bar{h}_{\mu\nu} = 0$, where $\bar{h}_{\mu\nu} = h_{\mu\nu} - \frac{1}{2}\eta_{\mu\nu}h$):
@@ -32,7 +34,7 @@ Here, $\Sigma$ represents the 3D boundary hypersurface, and $S_{\mu\nu} = e_\mu^
 
 ---
 
-## 2. Duality Resolution: Near-Wall Local Stress vs. Far-Field Potential (تفکیک دوگانگی: تنش موضعی در برابر پتانسیل میدان دور)
+## 2. Duality Resolution: Near-Wall Local Stress vs. Far-Field Potential
 
 ### Case A: Near-Wall Local Limit ($x \to \Sigma$)
 On the boundary interface $\Sigma$, integrating the field equations across the infinitesimal boundary thickness yields the exact Israel jump discontinuity conditions as derived in [[00_Root_Governance/NT_ECS_Noether_Conservation]]:
@@ -62,7 +64,7 @@ with $\Phi_{\text{boundary}}(r) = 4\pi G \sigma_{\text{wall}} r$.
 
 ---
 
-## 3. Mono-Tensor Kerr–Schild Reduction (تقلیل تک‌تانسوری کِر-شیلد)
+## 3. Mono-Tensor Kerr–Schild Reduction
 Under the lightlike co-dimension constraint ($dt = dx/c$), the emergent metric avoids tensor duality inconsistencies by taking the exact Kerr–Schild mono-tensor representation:
 
 $$g_{\mu\nu}^{\text{eff}} = \eta_{\mu\nu} + \frac{2\Phi_{\text{boundary}}}{c^2} k_\mu k_\nu, \qquad k_\mu k^\mu = 0$$
@@ -71,7 +73,7 @@ This form preserves exact linearity in Einstein's tensor projections while guara
 
 ---
 
-## 4. Emergent Christoffel Connections and Riemann Curvature (اتصالات کریستوفل و انحنای ریمان برآمده)
+## 4. Emergent Christoffel Connections and Riemann Curvature
 From the unified metric $g_{\mu\nu}^{\text{eff}}$, the effective affine connection is derived as:
 
 $$\Gamma^\rho_{\mu\nu} = \frac{1}{2}g^{\rho\lambda}\left( \partial_\mu g_{\nu\lambda} + \partial_\nu g_{\mu\lambda} - \partial_\lambda g_{\mu\nu} \right)$$
@@ -88,6 +90,6 @@ ensuring that general relativity is naturally recovered as the smooth macroscopi
 
 ---
 
-## 5. Upstream and Downstream Links (پیوندهای شبکه)
+## 5. Upstream and Downstream Links
 - Upstream Foundations: [[00_Root_Governance/NT_ECS_Noether_Conservation]], [[02_Boundary_Pressure_Gravity/02_Lattice_Stress_Tensor]], [[01_Canonical_Chain_Engine/08_Metric_Grounding_and_Temporal_Gauge]]
 - Downstream Foliation & Geodesics: [[03_Geometric_Metric_Emergence/02_Geodesic_Deviation_Pressure]], [[04_Observational_Validation/03_Lensing_In_Voids]]

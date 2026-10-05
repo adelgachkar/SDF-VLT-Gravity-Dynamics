@@ -1,7 +1,11 @@
 ---
 id: SDF-OBS-04-03-LENSING-VOIDS
 title: Gravitational Lensing Signatures in Cosmic Voids
-status: Mathematically Closed Derivation
+created: 2026-09-05
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
+status: canonical
 framework: SDF-VLT-Gravity-Dynamics
 parent: "[[01_Canonical_Chain_Engine/07_F_Phenomenological_Prints]]"
 dependencies:
@@ -15,65 +19,65 @@ tags:
   - weak-lensing
 ---
 
-# Gravitational Lensing in Cosmic Voids (عدسی گرانشی و انحراف نور در دیواره‌های خلأ کیهانی)
+# Gravitational Lensing in Cosmic Voids
 
-## ۱. ضریب شکست مؤثر اپتیکی بستر خلأ (Effective Refractive Index)
-در چارچوب تحدید ساختاری (SDF)، پرتوهای نوری گذرنده از کاواک‌های کیهانی تحت تأثیر پتانسیل مؤثر مرزی $\Phi_{\text{boundary}}(r)$ دچار شکست هندسی می‌شوند. با استفاده از تقریب فرمالیسم اپتیک فضا-زمان در متریک کِر-شیلد، ضریب شکست مؤثر نوری $n(\mathbf{r})$ به فرم زیر بیان می‌گردد:
+## 1. The Effective Optical Refractive Index of the Void Substrate
+Within the Structural Delineation Framework (SDF), light rays passing through cosmic cavities undergo geometric refraction under the effective boundary potential $\Phi_{\text{boundary}}(r)$. Using the spacetime-optics formalism in the Kerr–Schild metric, the effective optical refractive index $n(\mathbf{r})$ takes the form:
 
 $$n(\mathbf{r}) = 1 - \frac{2\Phi_{\text{eff}}(\mathbf{r})}{c^2} = 1 + \frac{2|\Phi_{\text{eff}}(\mathbf{r})|}{c^2}$$
 
-که در آن پتانسیل مؤثر حاصل برهم‌نهی سهم ماده توده‌ای درون‌کاواک و کشش سطحی دیواره مرزی است:
+where the effective potential is the superposition of the lumped-matter contribution inside the cavity and the boundary wall surface tension:
 
 $$\Phi_{\text{eff}}(r) = \Phi_{\text{matter}}(r) + \Phi_{\text{boundary}}(r)$$
 
-برای یک کاواک کروی به شعاع $R_v$ با چگالی تنش سطحی دیواره $\sigma_{\text{wall}}$، پتانسیل هندسی مرزی دیواره در داخل کاواک ($r \le R_v$) تابعی خطی-شعاعی است:
+For a spherical cavity of radius $R_v$ with wall surface-stress density $\sigma_{\text{wall}}$, the geometric wall potential inside the cavity ($r \le R_v$) is a linear-radial function:
 
 $$\Phi_{\text{boundary}}(r) = 2\pi G \sigma_{\text{wall}} r$$
 
 ---
 
-## ۲. زاویه انحراف کلی و رفع ناهنجاری ابعادی (Unified Deflection Angle)
-انحراف کلی پرتو نوری با پارامتر برخورد $b$ نسبت به مرکز کاواک، از انتگرال گرادیان عرضی پتانسیل در امتداد مسیر خط دید ($z$) حاصل می‌شود:
+## 2. The Unified Deflection Angle and Dimensional-Consistency Resolution
+The total deflection of a light ray with impact parameter $b$ relative to the cavity center follows from the transverse potential-gradient integral along the line of sight ($z$):
 
 $$\vec{\theta}_{\text{defl}} = -\frac{2}{c^2} \int_{-\infty}^{+\infty} \vec{\nabla}_\perp \Phi_{\text{eff}} \, dz$$
 
-این انتگرال به دو مؤلفه متمایز و از نظر ابعادی کاملاً سازگار تفکیک می‌گردد:
+This integral separates into two distinct and dimensionally consistent components:
 
 $$\theta_{\text{defl}}(b) = \theta_{\text{matter}}(b) + \theta_{\text{wall}}(b)$$
 
 $$\theta_{\text{defl}}(b) = \frac{4 G M_{\text{eff}}(b)}{c^2 b} + \frac{4\pi^2 G \sigma_{\text{wall}}}{c^2} \left( \frac{b}{\sqrt{R_v^2 - b^2}} \right) \Theta(R_v - b)$$
 
-که در آن:
-- جمله‌ی اول، انحراف شوارتزشیلدی استاندارد ناشی از توزیع جرم متمرکز با جرم مؤثر محصور $M_{\text{eff}}(b)$ است (بعد: $\frac{[\text{m}^3\text{kg}^{-1}\text{s}^{-2}][\text{kg}]}{[\text{m}^2\text{s}^{-2}][\text{m}]} = 1$، بدون بعد).
-- جمله‌ی دوم، تصحیح تکین مرزی ناشی از تنش پوسته است که در آن ضریب $\frac{G \sigma_{\text{wall}}}{c^2}$ دارای بعد معکوس طول ($[\text{m}]^{-1}$) بوده و در ترکیب با فاکتور هندسی $\frac{b}{\sqrt{R_v^2 - b^2}}$ (بدون بعد) و در ادغام در راستای ضخامت پوسته $\delta_{\text{wall}}$، زاویه انحراف کاملاً بدون بعد تولید می‌نماید:
+where:
+- The first term is the standard Schwarzschild deflection from a concentrated mass distribution with enclosed effective mass $M_{\text{eff}}(b)$ (dimension: $\frac{[\text{m}^3\text{kg}^{-1}\text{s}^{-2}][\text{kg}]}{[\text{m}^2\text{s}^{-2}][\text{m}]} = 1$, dimensionless).
+- The second term is the boundary-shell correction from the shell stress: the coefficient $\frac{G \sigma_{\text{wall}}}{c^2}$ has inverse-length dimension ($[\text{m}]^{-1}$), and combined with the geometric factor $\frac{b}{\sqrt{R_v^2 - b^2}}$ (dimensionless) and integration along the shell thickness $\delta_{\text{wall}}$, it produces a fully dimensionless deflection angle:
 
 $$\theta_{\text{wall}}(b) \approx \frac{8\pi G \sigma_{\text{wall}} \cdot b}{c^2 R_v} \quad \text{for } b \ll R_v$$
 
-تحلیل ابعادی ترم دیواره:
-$$[\theta_{\text{wall}}] = \frac{[\text{m}^3 \text{kg}^{-1} \text{s}^{-2}] [\text{kg} \cdot \text{m}^{-2}] [\text{m}]}{[\text{m}^2 \text{s}^{-2}] [\text{m}]} = \frac{\text{m}^2}{\text{m}^2} = 1 \quad \text{(بدون بعد)}$$
+Dimensional analysis of the wall term:
+$$[\theta_{\text{wall}}] = \frac{[\text{m}^3 \text{kg}^{-1} \text{s}^{-2}] [\text{kg} \cdot \text{m}^{-2}] [\text{m}]}{[\text{m}^2 \text{s}^{-2}] [\text{m}]} = \frac{\text{m}^2}{\text{m}^2} = 1 \quad \text{(dimensionless)}$$
 
 ---
 
-## ۳. گذار پوسته نوری و شرایط بارابش-اسرائیل (Null Shell Discontinuity)
-هنگامی که جبهه موج نوری پوسته دیواره کاواک را در $r = R_v$ قطع می‌کند، ناپیوستگی در بردار موج $k^\mu$ توسط تانسور تنش سطحی $S_{ab}$ روی ابرسطح مرزی $\Sigma$ مقید می‌گردد:
+## 3. The Null-Shell Discontinuity and the Barrabès–Israel Condition
+When the optical wavefront crosses the cavity wall shell at $r = R_v$, the discontinuity in the wave vector $k^\mu$ is constrained by the surface stress tensor $S_{ab}$ on the boundary hypersurface $\Sigma$:
 
 $$[k^\mu] = -\frac{8\pi G}{c^4} S^\mu{}_\nu k^\nu$$
 
-این ناپیوستگی به یک «جهش فاز» (Phase Jump) موضعی منجر می‌شود که پدیدارشناختی امضای همگرایی را از یک عدسی گرانشی ملایم پیوسته، به یک الگوی برهم‌نهی لبه‌دار (Shear Ring Signature) در مرز کاواک‌های بزرگ کیهانی تبدیل می‌کند.
+This discontinuity produces a local **phase jump** that shifts the lensing signature from a mild continuous gravitational lens to an edge-patterned superposition (Shear Ring Signature) at the boundaries of large cosmic cavities.
 
 ---
 
-## ۴. مقایسه با داده‌های رصدی و آزمون‌های تجربی (Empirical Signatures)
-1. **عدسی واگرا در مرکز و همگرا در مرز:** بر خلاف مدل‌های تک‌مؤلفه‌ای $\Lambda\text{CDM}$ که کاواک را صرفاً یک عدسی واگرا (Defocusing lens) با چگالی منفی می‌دانند، در SDF حضور دیواره تحت فشار ($\sigma_{\text{wall}}$) سبب ایجاد یک حلقه برشی با همگرایی مثبت تانسوری در لبه کاواک ($b \approx R_v$) می‌گردد.
-2. **پیش‌بینی سیگنال تنیدگی مماسی (Tangential Shear Profile):**
-$$\gamma_t(\theta) = \begin{cases} -\bar{\kappa}(\theta) < 0 & \theta < \theta_v \quad (\text{واگرایی درون کاواک}) \\ +\kappa_{\text{ring}} > 0 & \theta \approx \theta_v \quad (\text{همگرایی مثبت پوسته مرزی}) \end{cases}$$
-این پروفایل دوگانه یک امضای تفکیک‌کننده کلیدی است که در نقشه‌برداری‌های برشی ضعیف (Weak Lensing surveys) نظیر تلسکوپ‌های Euclid و کاوشگر روبین (LSST) قابل آزمایش و ابطال تجربی است.
+## 4. Comparison with Observational Data and Empirical Tests
+1. **Diverging center, converging edge:** unlike single-component $\Lambda\text{CDM}$ models that treat a void purely as a diverging (defocusing) lens with negative density, in SDF the presence of the pressurized wall ($\sigma_{\text{wall}}$) generates a shear ring with positive tensor convergence at the cavity edge ($b \approx R_v$).
+2. **Tangential shear profile prediction:**
+$$\gamma_t(\theta) = \begin{cases} -\bar{\kappa}(\theta) < 0 & \theta < \theta_v \quad \text{(divergence inside the void)} \\ +\kappa_{\text{ring}} > 0 & \theta \approx \theta_v \quad \text{(positive convergence of the boundary shell)} \end{cases}$$
+This double profile is a key discriminating signature, testable and falsifiable in weak-lensing surveys such as the Euclid telescopes and the Rubin Observatory (LSST).
 
 ---
 
-## ۵. پیوندهای شبکه (Network Links)
-- اثرات پدیدارشناختی زنجیره: [[01_Canonical_Chain_Engine/07_F_Phenomenological_Prints]]
-- معادله انحراف ژئودزیک: [[03_Geometric_Metric_Emergence/02_Geodesic_Deviation_Pressure]]
-- برآمدن تانسور متریک: [[03_Geometric_Metric_Emergence/01_Effective_Metric_Tensor]]
-- انحنای چرخش کهکشانی: [[04_Observational_Validation/01_Galactic_Rotation_Curves]]
-- پیش‌بینی‌های تجربی ابطال‌پذیر: [[04_Observational_Validation/04_Empirical_Predictions]]
+## 5. Network Links
+- Chain phenomenological effects: [[01_Canonical_Chain_Engine/07_F_Phenomenological_Prints]]
+- Geodesic-deviation equation: [[03_Geometric_Metric_Emergence/02_Geodesic_Deviation_Pressure]]
+- Effective metric tensor emergence: [[03_Geometric_Metric_Emergence/01_Effective_Metric_Tensor]]
+- Galactic rotation curvature: [[04_Observational_Validation/01_Galactic_Rotation_Curves]]
+- Falsifiable empirical predictions: [[04_Observational_Validation/04_Empirical_Predictions]]

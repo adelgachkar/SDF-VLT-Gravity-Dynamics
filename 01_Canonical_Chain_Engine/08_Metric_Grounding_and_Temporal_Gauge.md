@@ -1,7 +1,11 @@
 ---
 id: SDF-ENG-01-08-METRIC-GAUGE
 title: Metric Grounding and Temporal Gauge
-status: Mathematically Closed Derivation
+created: 2026-09-05
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
+status: canonical
 framework: SDF-VLT-Gravity-Dynamics
 parent: "[[01_Canonical_Chain_Engine/05_M_Manifold_Foliations]]"
 dependencies:
@@ -15,61 +19,60 @@ tags:
   - lapse-function
 ---
 
-# Metric Grounding and Temporal Gauge (زمینه‌سازی متریک و پیمانه زمانی)
+# Metric Grounding and Temporal Gauge
 
-## ۱. تثبیت پیمانه زمانی و تجزیه برگه‌بندی ADM (Temporal Gauge Fixing & 3+1 ADM Foliation)
-در چارچوب تحدید ساختاری (SDF)، پارامتر زمان نه یک مؤلفه از پیش موجود، بلکه آهنگ پیشروی فاز تحدید در امتداد بردار نرمال یکه برگه‌های فضایی ($n^\mu$) است. فضا-زمان مؤثر از طریق تجزیه $3+1$ استاندارد ADM زمینه‌سازی می‌گردد:
+## 1. Temporal Gauge Fixing and 3+1 ADM Foliation
+Within the Structural Delineation Framework (SDF), the time parameter is not a pre-existing component: it is the rate of advance of the delimitation phase along the unit normal $n^\mu$ of the spatial sheets. Effective spacetime is grounded through the standard $3+1$ ADM decomposition:
 
 $$ds^2 = -N^2 c^2 dt^2 + \gamma_{ij} (dx^i + \beta^i dt)(dx^j + \beta^j dt)$$
 
-که در آن:
-- $N(x, t)$ تابع لغزش زمانی (Lapse Function) است که نرخ گذر زمان ویژه محلی را نسبت به زمان هماهنگ برگه تعیین می‌کند ($d\tau = N dt$).
-- $\beta^i(x, t)$ بردار شیفت مکانی (Shift Vector) است که لغزش نسبی خطوط مختصات را در طول برگه‌بندی توصیف می‌نماید.
-- $\gamma_{ij}$ متریک ریمانی القایی ۳-بعدی روی برگه‌های هم‌فاز $\Sigma_t$ است.
+where:
+- $N(x, t)$ is the lapse function, setting the local proper-time passage rate relative to the sheet-synchronized time ($d\tau = N dt$).
+- $\beta^i(x, t)$ is the shift vector, describing the relative sliding of coordinate lines along the foliation.
+- $\gamma_{ij}$ is the induced 3-dimensional Riemannian metric on the co-phase sheets $\Sigma_t$.
 
-در غیاب چرخش‌های القایی و برهم‌کنش‌های تکانه‌ای خالص ($\beta^i = 0$)، المان خط به فرم قطری استاندارد کاهش می‌یابد:
+In the absence of induced rotations and pure momentum interactions ($\beta^i = 0$), the line element reduces to the standard diagonal form:
 
 $$ds^2 = -N^2 c^2 dt^2 + \gamma_{ij} dx^i dx^j$$
 
 ---
 
-## ۲. ریشه‌یابی فیزیکی تابع لغزش زمانی از پتانسیل تنش مرزی (Lapse Grounding)
-ضریب پیمانه $N$ مستقیماً توسط گرادیان چگالی تنش مرزی و پتانسیل هندسی کاواک‌ها ($\Phi_{\text{boundary}}$) تعیین و مقید می‌شود:
+## 2. Physical Grounding of the Lapse Function in the Boundary-Stress Potential (Lapse Grounding)
+The gauge coefficient $N$ is directly determined and constrained by the gradient of the boundary-stress density and the geometric potential of the cavities ($\Phi_{\text{boundary}}$):
 
 $$N = \sqrt{1 - \frac{2\Phi_{\text{boundary}}(x)}{c^2}}$$
 
-در حد میدان ضعیف ($\Phi_{\text{boundary}} \ll c^2$):
+In the weak-field limit ($\Phi_{\text{boundary}} \ll c^2$):
 
 $$N \approx 1 - \frac{\Phi_{\text{boundary}}(x)}{c^2}$$
 
-این ساختار نشان می‌دهد که اتساع گرانشی زمان، نتیجه مستقیم افت آهنگ انتقال فاز در مجاورت تمرکز تنش‌های سطحی دیواره کاواک‌هاست.
+This structure shows that gravitational time dilation is the direct consequence of the reduced phase-transfer rate in the vicinity of concentrated surface stresses of the cavity walls.
 
 ---
 
-## ۳. گرادیان لغزش و شتاب ۴-برداری (Acceleration & Lapse Gradient)
-شتاب ۴-برداری خطوط جریان یکنواخت عمود بر برگه‌ها ($a_\mu = n^\nu \nabla_\nu n_\mu$) مستقیماً از گرادیان لگاریتمی تابع لغزش به دست می‌آید:
+## 3. Lapse Gradient and the 4-Acceleration (Acceleration & Lapse Gradient)
+The 4-acceleration of the uniform flow lines orthogonal to the sheets ($a_\mu = n^\nu \nabla_\nu n_\mu$) follows directly from the logarithmic gradient of the lapse function:
 
 $$a_i = \partial_i \ln N = \frac{1}{N} \partial_i N \approx -\frac{1}{c^2} \partial_i \Phi_{\text{boundary}}$$
 
-این رابطه با شتاب مرزی برآمده از میدان نشت فاز در [[02_Boundary_Pressure_Gravity/03_Acceleration_Emergence_Field]] هم‌ارز است:
+This relation is equivalent to the boundary acceleration arising from the phase-leak field of [[02_Boundary_Pressure_Gravity/03_Acceleration_Emergence_Field]]:
 
 $$a_i = -\frac{1}{c^2} \nabla_i \Phi_{\text{boundary}} = \mathcal{Q}_{\text{leak}, i}$$
 
 ---
 
-## ۴. شرایط سازگاری برگه‌ها و بقای پیمانه (Gauge Conservation)
-برای تضمین حفظ ناوردایی پیمانه‌ای و بستار سینماتیکی زنجیره کانونی، شرط انحنای برونی برگه‌ها ($K_{ij}$) با آهنگ تغییرات زمانی متریک فضایی جفت می‌شود:
+## 4. Sheet Compatibility Condition and Gauge Conservation
+To guarantee gauge-invariance preservation and the kinematic closure of the canonical chain, the extrinsic curvature of the sheets ($K_{ij}$) is coupled to the time variation of the spatial metric:
 
 $$K_{ij} = -\frac{1}{2N} \left( \partial_t \gamma_{ij} - D_i \beta_j - D_j \beta_i \right)$$
 
-که در پیمانه نرمال فازی ($\beta^i = 0$):
+In the phase-normal gauge ($\beta^i = 0$):
 
 $$\partial_t \gamma_{ij} = -2N K_{ij}$$
 
-این معادله تضمین می‌کند که فرگشت هندسه فضایی، پیوستگی کامل با شرایط اتصال اسرائیل (Israel Junction Conditions) در دیواره‌ها را حفظ می‌نماید.
+This equation guarantees that the evolution of the spatial geometry remains fully continuous with the Israel junction conditions on the walls.
 
-## ۵. پیوندهای شبکه و زنجیره کانونی (Network Links)
-- گره والد زنجیره: [[01_Canonical_Chain_Engine/05_M_Manifold_Foliations]]
-- مبانی پایه‌ای متریک: [[03_Geometric_Metric_Emergence/01_Effective_Metric_Tensor]]
-- میدان شتاب ناشی از فشار مرز:
-  [[02_Boundary_Pressure_Gravity/03_Acceleration_Emergence_Field]]
+## 5. Network Links and the Canonical Chain
+- Parent chain node: [[01_Canonical_Chain_Engine/05_M_Manifold_Foliations]]
+- Metric foundations: [[03_Geometric_Metric_Emergence/01_Effective_Metric_Tensor]]
+- Boundary-pressure acceleration field: [[02_Boundary_Pressure_Gravity/03_Acceleration_Emergence_Field]]

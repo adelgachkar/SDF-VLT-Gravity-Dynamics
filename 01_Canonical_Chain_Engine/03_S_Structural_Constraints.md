@@ -1,6 +1,9 @@
 ---
 title: 03_S Structural Constraints
 created: 2026-09-05
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
 framework: Structural Delineation Framework (SDF)
 phase: SDF-VLT-Gravity-Dynamics
 tags:
@@ -8,19 +11,19 @@ tags:
 - structural-constraints
 - lattice-geometry
 id: SDF-VLT--01_Canonical_Chain_Engine-03_S_Structural_Constraints
-status: Draft
+status: canonical
 parent: []
 dependencies: []
 ---
 
 # Structural Constraints ($\mathcal{S}$)
 
-## ۱. قیود ساختاری و شبکه مکعبی
-پیکربندی هندسی پایه بر مبنای **یمکعب‌مستطیل با قاعده واحد** شکل می‌گیرد. در یک سلول با قاعده $A=1$ و حجم $V=h$:
+## 1. Structural Constraints and the Cubic Lattice
+The base geometric configuration is a **unit-base cuboid**. For a cell with base area $A=1$ and volume $V=h$:
 $$V = A \cdot h = h$$
 
-توزیع تنش روی وجوه جانبی دیواره‌ها، چارچوب الاستیک شبکه را تثبیت می‌کند.
+The distribution of stress across the lateral faces of the walls fixes the elastic framework of the lattice.
 
-## پیوندهای شبکه
-- گام بعدی: [[01_Canonical_Chain_Engine/04_R_Resonance_Alignment]]
-- تنش مرزی: [[02_Boundary_Pressure_Gravity/02_Lattice_Stress_Tensor]]
+## Network Links
+- Next step: [[01_Canonical_Chain_Engine/04_R_Resonance_Alignment]]
+- Boundary stress: [[02_Boundary_Pressure_Gravity/02_Lattice_Stress_Tensor]]

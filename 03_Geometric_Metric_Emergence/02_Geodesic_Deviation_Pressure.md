@@ -1,6 +1,9 @@
 ---
 title: Geodesic Deviation Under Boundary Pressure
 created: 2026-09-05
+updated: 2026-10-05
+author: Adel Gachkar
+license: MIT
 framework: Structural Delineation Framework (SDF)
 phase: SDF-VLT-Gravity-Dynamics
 tags:
@@ -10,60 +13,60 @@ tags:
 - weak-equivalence-principle
 - kerr-schild
 id: SDF-VLT--03_Geometric_Metric_Emergence-02_Geodesic_Deviation_Pressure
-status: Draft
+status: canonical
 parent: []
 dependencies: []
 ---
 
-# Geodesic Deviation Under Boundary Pressure (انحراف ژئودزیک تحت فشار مرز)
+# Geodesic Deviation Under Boundary Pressure
 
-## ۱. معادله انحراف ژئودزیک تعمیم‌یافته و حفظ اصل هم‌ارزی (WEP)
-حضور گرادیان فشار مرزی، معادله انحراف ژئودزیک میان دو مسیر مجاور با بردار انحراف $\xi^\mu$ را به فرمی تصحیح می‌کند که استقلال کامل از جرم ذره آزمون تضمین شود و اصل هم‌ارزی ضعیف (WEP) کاملاً پایدار بماند:
+## 1. The Generalized Geodesic-Deviation Equation and Preservation of the Weak Equivalence Principle (WEP)
+The presence of a boundary-pressure gradient corrects the geodesic-deviation equation between two neighboring paths with separation vector $\xi^\mu$ in a form that guarantees complete independence from the test-particle mass, keeping the weak equivalence principle (WEP) fully intact:
 
 $$\frac{D^2 \xi^\mu}{d\tau^2} + R^\mu{}_{\nu\alpha\beta} u^\nu u^\alpha \xi^\beta = \frac{1}{\rho_{\text{lattice}}} \nabla_\xi \left( \nabla_\nu T^{\text{boundary}\,\mu\nu} \right)$$
 
-که در آن:
-- $u^\mu = dx^\mu/d\tau$ ۴-سرعت نرمال‌شده ذره آزمون است ($u_\mu u^\mu = -c^2$).
-- $\rho_{\text{lattice}}$ چگالی لختی مؤثر بستر شبکه است و جایگزین جرم دلخواه ذره آزمون شده تا ماهیت شتاب، صرفاً هندسی باقی بماند.
-- $\nabla_\xi \equiv \xi^\alpha \nabla_\alpha$ مشتق هم‌وردا در امتداد بردار جدایی ژئودزیک است.
+where:
+- $u^\mu = dx^\mu/d\tau$ is the normalized 4-velocity of the test particle ($u_\mu u^\mu = -c^2$).
+- $\rho_{\text{lattice}}$ is the effective inertial density of the lattice substrate, replacing the arbitrary test-particle mass so that the nature of the acceleration remains purely geometric.
+- $\nabla_\xi \equiv \xi^\alpha \nabla_\alpha$ is the covariant derivative along the geodesic-separation vector.
 
 ---
 
-## ۲. همگرایی مسیرهای نوری و حد صفر-فاصله (Null Rays Limit)
-برای پرتوهای نوری و فوتون‌های عبوری از مجاورت مرز کاواک‌ها، با استفاده از پارامتری‌سازی آفین $\lambda$ و بردار موج نوری $k^\mu = dx^\mu/d\lambda$ ($k_\mu k^\mu = 0$):
+## 2. Convergence of Null Rays and the Zero-Distance Limit (Null Rays Limit)
+For light rays and photons passing near cavity boundaries, using the affine parametrization $\lambda$ and the optical wave vector $k^\mu = dx^\mu/d\lambda$ ($k_\mu k^\mu = 0$):
 
 $$\frac{D^2 \xi^\mu}{d\lambda^2} + R^\mu{}_{\nu\alpha\beta} k^\nu k^\alpha \xi^\beta = \nabla_\xi \left( \mathcal{Q}_{\text{leak}}^\mu \right)$$
 
-که در آن $\mathcal{Q}_{\text{leak}}^\mu$ میدان شتاب خالص هندسی برآمده از گرادیان نشت فاز در ابرسطح مرزی است:
+where $\mathcal{Q}_{\text{leak}}^\mu$ is the net geometric acceleration field arising from the phase-leak gradient on the boundary hypersurface:
 
 $$\mathcal{Q}_{\text{leak}}^\mu \equiv -\frac{8\pi G}{c^4} \left( \nabla_\nu S^{\mu\nu}_{\text{eff}} \right) = \frac{1}{c^2} \nabla^\mu \Phi_{\text{boundary}}$$
 
-این فرم هندسی نشان می‌دهد که انحراف فوتون‌ها نه ناشی از برهم‌کنش ماده با ماده، بلکه ناشی از گذار از گرادیان انحنای القایی پوسته کاواک است.
+This geometric form shows that photon deflection does not arise from matter–matter interaction but from the transition across the induced-curvature gradient of the cavity shell.
 
 ---
 
-## ۳. ساختار تک‌تانسوری کِر-شیلد (Kerr–Schild Mono-Tensor Reduction)
-به منظور پرهیز از دوگانگی ناهماهنگ در فضا-زمان پس‌زمینه و اختلالات، متریک برآمده در حضور نشت فاز تشعشعی مرزی به فرم تک‌تانسوری کِر-شیلد بیان می‌شود:
+## 3. Kerr–Schild Mono-Tensor Structure (Kerr–Schild Mono-Tensor Reduction)
+To avoid incoherent tensor duality between the background spacetime and the perturbations, the emergent metric in the presence of the radiative boundary phase leak is expressed in the Kerr–Schild mono-tensor form:
 
 $$g_{\mu\nu} = \eta_{\mu\nu} + \frac{2\Phi_{\text{boundary}}}{c^2} k_\mu k_\nu, \qquad k_\mu k^\mu = 0$$
 
-تحت این بازنمایی، تانسور انحنای ریمان $R^\mu{}_{\nu\alpha\beta}$ به‌طور طبیعی با شرط نوری هم‌بعدی ($dt = dx/c$) جفت شده و معادلات انحراف بدون نیاز به فرضیات ماده تاریک، پدیده‌های همگرایی را بازتولید می‌کنند.
+Under this representation, the Riemann curvature tensor $R^\mu{}_{\nu\alpha\beta}$ couples naturally to the lightlike co-dimension condition ($dt = dx/c$), and the deviation equations reproduce lensing phenomena without any dark-matter assumptions.
 
 ---
 
-## ۴. پاسخ میدان تیدال و شتاب جزرومدی
-نیروی کششی جزرومدی مؤثر وارد بر بردار انحراف $\xi^\mu$ تحت تأثیر هم‌زمان انحنای پس‌زمینه و گرادیان فشار مرزی به فرم تانسوری زیر خلاصه می‌شود:
+## 4. Tidal Field Response and the Tidal Acceleration
+The effective tidal force acting on the separation vector $\xi^\mu$, under the combined effect of the background curvature and the boundary-pressure gradient, reduces to the following tensor form:
 
 $$\mathcal{E}^\mu{}_\beta \equiv -R^\mu{}_{\nu\alpha\beta} u^\nu u^\alpha + \nabla_\beta \mathcal{Q}_{\text{leak}}^\mu$$
 
 $$\frac{D^2 \xi^\mu}{d\tau^2} = \mathcal{E}^\mu{}_\beta \, \xi^\beta$$
 
-این تقارن ساختاری تضمین می‌کند که انحراف ژئودزیک‌ها در مرز کاواک‌ها به‌طور خودکار شرایط بقای دیورژانس انرژی-تکانه را برآورده سازد.
+This structural symmetry guarantees that geodesic deviation at cavity boundaries automatically satisfies the energy–momentum divergence conservation conditions.
 
 ---
 
-## پیوندهای شبکه
-- متریک مؤثر: [[03_Geometric_Metric_Emergence/01_Effective_Metric_Tensor]]
-- زمینه‌سازی متریک و پیمانه زمانی: [[01_Canonical_Chain_Engine/08_Metric_Grounding_and_Temporal_Gauge]]
-- اصل تغییراتی و شرایط مرزی اسرائیل: [[00_Root_Governance/NT_ECS_Noether_Conservation]]
-- عدسی در خلأ: [[04_Observational_Validation/03_Lensing_In_Voids]]
+## Network Links
+- Effective metric: [[03_Geometric_Metric_Emergence/01_Effective_Metric_Tensor]]
+- Metric grounding and temporal gauge: [[01_Canonical_Chain_Engine/08_Metric_Grounding_and_Temporal_Gauge]]
+- Variational principle and Israel boundary conditions: [[00_Root_Governance/NT_ECS_Noether_Conservation]]
+- Lensing in voids: [[04_Observational_Validation/03_Lensing_In_Voids]]

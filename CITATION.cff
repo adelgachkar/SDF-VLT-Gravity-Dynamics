@@ -7,8 +7,8 @@ authors:
     given-names: Adel
     affiliation: "Islamic Azad University, Urmia"
     orcid: "https://orcid.org/0009-0006-7713-6004"
-version: 3.4.2
-date-released: "2026-09-06"
+version: 3.4.3
+date-released: "2026-10-05"
 license: MIT
 doi: 10.5281/zenodo.22412461
 url: "https://github.com/adelgachkar/SDF-VLT-Gravity-Dynamics"
